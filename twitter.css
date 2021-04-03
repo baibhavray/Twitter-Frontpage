@@ -1,0 +1,419 @@
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+
+button{
+    border: 0px;
+    outline: 0px;
+}
+
+i{
+    margin-right: 20px;
+    font-size: 10px;
+    /*To give space around the icons and the text*/
+}
+
+button{
+    cursor: pointer;
+}
+
+#main-container{
+    display: flex;
+}
+
+#ii{
+    margin-bottom: 13px;
+    font-size: 45px;
+    color: #2a96da;
+}
+/*
+.wing{
+    width: 55px;
+    height: 15px;
+    border-radius: 60%;
+    background-color: #2a96da;
+    border: none;
+}
+
+#left-wing{
+    position: relative;
+    bottom: 10px;
+    left: 23px;
+    animation-name: left-wings;
+    transform-origin: right;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;    
+}
+
+@keyframes left-wings{
+    5%{
+        transform: rotate(40deg);
+    }
+    15%{
+        transform: rotate(-40deg);
+    }
+    25%{
+        transform: rotate(40deg);
+    }
+    35%{
+        transform: rotate(-40deg);
+    }
+    45%{
+        transform: rotate(40deg);
+    }
+    55%{
+        transform: rotate(-40deg);
+    }
+    65%{
+        transform: rotate(40deg);
+    }
+    75%{
+        transform: rotate(-40deg);
+    }
+    85%{
+        transform: rotate(40deg);
+    }
+    95%{
+        transform: rotate(-40deg);
+    }
+}
+
+
+#right-wing{
+    position: relative;
+    bottom: 8px;
+    right: 40px;
+    animation-name: right-wings;
+    transform-origin: left;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes right-wings{
+    5%{
+        transform: rotate(-40deg);
+    }
+    15%{
+        transform: rotate(40deg);
+    }
+    25%{
+        transform: rotate(-40deg);
+    }
+    35%{
+        transform: rotate(40deg);
+    }
+    45%{
+        transform: rotate(-40deg);
+    }
+    55%{
+        transform: rotate(40deg);
+    }
+    65%{
+        transform: rotate(-40deg);
+    }
+    75%{
+        transform: rotate(40deg);
+    }
+    85%{
+        transform: rotate(-40deg);
+    }
+    95%{
+        transform: rotate(40deg);
+    }
+}
+*/
+#bird-fly{
+    animation-name: fly-bird;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fly-bird{
+    15%{
+        transform: translateY(-20px);
+    }
+    30%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(-60px);
+    }
+    70%{
+        transform: translateY(-80px);
+    }
+    90%{
+        transform: translateY(-100px);
+    }
+    99%{
+        opacity: 0;
+    }
+}
+
+#b4{
+    height: 41px;
+    width: 70px;
+    background-color: white;
+    color: #2a96da;
+    margin-left: 12px;
+    border-radius:20px;
+    border: 1px solid #2a96da;
+    position: relative;
+    left: 220px;
+    bottom: 10px;
+}
+
+#b4:hover{
+    background-color: #def1fc;   
+}
+
+
+#blue-half{
+   /*This "linear-gradient" helps to merge 2 colors, we have 
+   to give a direction and two colorsin order to add them*/
+    background: linear-gradient(to right, #35a2e6,#176392);
+    color: white;
+    
+}
+
+#blue-texts{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: "Crete Round";
+    position: relative;
+    animation-name: blue-text;
+    animation-duration: 2s;
+}
+
+@keyframes blue-text{
+    from{
+        position: absolute;
+        right: 30vw;
+    }
+    to{
+        position: absolute;
+        right:64.5vw;
+    }
+} 
+
+#white-half{
+    position: relative;
+}
+
+
+#white-content{
+    height: 220;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#white-content-animation{
+    animation-name: white-content;
+    animation-duration: 2s;
+}
+
+@keyframes white-content{
+    from{
+        transform: translateY(600px);
+    }
+    to{
+       transform: translateY(0px);
+    }
+}
+  
+#log-in{
+    position: absolute;
+    top: 30px;
+    animation-name:log-form-key;
+    animation-duration: 2s;
+}
+
+@keyframes log-form-key{
+    from{
+        left: -106vh;
+    }
+    to{
+        left: 28vh;
+    }
+}   
+
+#log-form{
+    display: flex;
+    position: absolute;
+}
+
+#underline:hover {
+    border-bottom: 1px solid lightgray;
+    width: 115px;
+
+}
+
+#p1{
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+#b1{
+    width: 360px;
+    height: 30px;
+    background-color:#2a96da;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid darkgray;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#b1:hover{
+    background-color: #257bc2;
+}
+
+#b2{
+    width: 360px;
+    height: 30px;
+    color: #2a96da;
+    border-radius: 15px;
+    border: 1px solid #2a96da;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#b2:hover{
+    background-color: #def1fc;
+}
+
+#b3{
+    height: 41px;
+    width: 70px;
+    background-color: white;
+    color: #2a96da;
+    margin-left: 12px;
+    border-radius:20px;
+    border: 1px solid #2a96da;
+}
+
+#b3:hover{
+    background-color: #def1fc;
+}
+
+#footer{
+    width: 100%;
+    border: 1px solid lightgray;
+    height: 46px;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    
+}
+
+.classDiv{
+    height: 95vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.log-in-form{
+    height: 40px;
+    width: 198px;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    padding-left:10px ;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+/*This HOVER is used for the respective changes when
+  we hover over or take our mouse to those elements */
+
+
+/*When we click over those elements(which we have maintioned)
+ it will change respectively*/
+.log-in-form:focus{
+    outline-style: none;
+    border: 1px solid #2a96da;
+}
+
+
+/*By using "@media" we can make chnages  so the we can 
+  use it in mobile phones or smaller devices accordingly
+  
+  Also if we change the outer size of the browser it 
+  wil act accordingly...
+  
+  it generally solves the problem of browser sizes or helps
+   to adjust the web page according to the browser size*/
+@media(min-width:1150px) and (max-width:1450px){
+    #log-form{
+        position: relative;
+        right: 60px;
+    }
+}
+
+@media(min-width:0px) and (max-width:1150px){
+    #log-form{
+       display: none;
+    }
+    #log-form{
+        left: 200px;
+        top:-8px
+    }
+    #white-content{
+        position: relative;
+    }
+}   
+
+@media(min-width:0px) and (max-width:780px){
+    .classDiv{
+        height: 40vh;
+    }
+    #footer{
+        height: 20vh;
+    }
+    #blue-texts{
+        position: relative;
+        top: -70px;
+    }
+}
+
+
+
+@media(min-width:1151px){
+    #b4{
+        display: none;
+    }
+}
+
+@media(min-width:0px) and (max-width:780px){
+    #main-container{
+        flex-direction: column-reverse;
+    }
+
+    .classDiv{
+        width: 100%;
+        height: 47vh;
+    }
+
+}
+
+@media(min-width:0px) and (max-width:420){
+    .log-sin-btn{
+        width: 325;
+    }
+    
+    #log-in{
+        left: 230px;
+        top: -10px;
+    }
+}
+
